@@ -15,17 +15,24 @@ const skillCategories = [
     bg: "bg-orange-500/10",
   },
   {
+  name: "NumPy",
+  icon: Layers,
+  color: "text-blue-600",
+  bg: "bg-blue-600/10",
+},
+{
+  name: "Pandas",
+  icon: Database,
+  color: "text-indigo-500",
+  bg: "bg-indigo-500/10",
+},
+  {
     name: "TensorFlow",
     icon: Brain,
     color: "text-orange-600",
     bg: "bg-orange-600/10",
   },
-  {
-    name: "PyTorch",
-    icon: Brain,
-    color: "text-red-500",
-    bg: "bg-red-500/10",
-  },
+  
   {
     name: "Scikit-learn",
     icon: Layers,
@@ -33,29 +40,32 @@ const skillCategories = [
     bg: "bg-yellow-500/10",
   },
   {
-    name: "Docker",
-    icon: Container,
-    color: "text-blue-600",
-    bg: "bg-blue-600/10",
+    name: "PyTorch",
+    icon: Brain,
+    color: "text-red-500",
+    bg: "bg-red-500/10",
   },
+  
+  {
+  name: "Machine Learning",
+  icon: Layers,
+  color: "text-yellow-500",
+  bg: "bg-yellow-500/10",
+},
+
   {
     name: "Flask",
     icon: Code2,
     color: "text-gray-600",
     bg: "bg-gray-600/10",
   },
-  {
-    name: "Java",
-    icon: Code2,
-    color: "text-red-600",
-    bg: "bg-red-600/10",
-  },
-  {
-    name: "Angular",
-    icon: Globe,
-    color: "text-red-500",
-    bg: "bg-red-500/10",
-  },
+{
+  name: "Deep Learning",
+  icon: Brain,
+  color: "text-red-500",
+  bg: "bg-red-500/10",
+},
+  
 ];
 
 export const Skills = () => {

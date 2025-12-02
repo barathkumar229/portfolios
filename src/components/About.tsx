@@ -4,9 +4,9 @@ import { Card } from "./ui/card";
 
 export const About = () => {
   const skills = [
-    "Python", "Java", "SQL", "TensorFlow", "Scikit-learn",
+    "Python","SQL", "TensorFlow", "Scikit-learn",
     "Machine Learning", "LLMs", "AI", "Generative AI",
-    "Data Analysis", "Angular", "React"
+    "Data Analysis", "Flask",'Data Science','APIs'
   ];
 
   return (

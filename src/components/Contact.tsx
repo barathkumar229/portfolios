@@ -16,7 +16,7 @@ export const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Create mailto link with form data
-    const mailtoLink = `mailto:barathkumar@example.com?subject=Contact from ${formData.name}&body=${formData.message}%0D%0A%0D%0AFrom: ${formData.email}`;
+    const mailtoLink = `mailto:barathkuma234@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}%0D%0A%0D%0AFrom: ${formData.email}`;
     window.location.href = mailtoLink;
   };
 
@@ -91,14 +91,14 @@ export const Contact = () => {
             <div className="mt-8 pt-8 border-t border-border">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                 <a
-                  href="mailto:barathkumar@example.com"
+                  href="mailto:barathkuma234@gmail.com"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Mail className="w-5 h-5" />
-                  barathkumar@example.com
+                  barathkuma234@gmail.com
                 </a>
                 <a
-                  href="https://linkedin.com/in/barathkumar"
+                  href="https://www.linkedin.com/in/barathkumar229/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
@@ -107,7 +107,7 @@ export const Contact = () => {
                   LinkedIn
                 </a>
                 <a
-                  href="https://github.com/barathkumar"
+                  href="https://github.com/barathkumar229"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"

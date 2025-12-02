@@ -5,41 +5,31 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "AI Smart Trolley Cart",
-    description: "Automated billing system using barcode scanning and weight sensors for seamless shopping experience. Reduces checkout time and improves customer satisfaction.",
-    tech: ["Python", "Computer Vision", "IoT", "Raspberry Pi"],
-    image: "🛒",
+    title: "Sentiment Analysis on YouTube Comments using ML & LLM/AI",
+    description: "Developed an interactive dashboard to analyze YouTube comments, classifying them into positive, negative, and neutral sentiments. Leveraged ML models and LLMs to provide insights on audience engagement and trends.",
+    tech: ["Python", "ML", "LLM", "Flask","Scikit-learn",'YouTube API',"Logistic Regression"],
+   
+    github: "https://github.com/barathkumar229/Sentiment-Analysis-on-YouTube-Comments-using-Machine-Learning",
+    demo: "https://sentiment-analysis-on-youtube-comments-fcvs.onrender.com",
   },
   {
-    title: "Stock Market Prediction using ML",
-    description: "Advanced prediction model combining regression analysis with sentiment analysis from financial news to forecast stock prices with high accuracy.",
-    tech: ["Python", "Scikit-learn", "LSTM", "NLP", "Pandas"],
-    image: "📈",
+    title: "AI Google Stock Predictor Using ML",
+    description: "Built a predictive model to forecast Google stock prices using historical data and financial news sentiment analysis. Improved accuracy by combining regression models with LSTM and NLP techniques.",
+    tech: ["Python", "Scikit-learn", "Gradient boost ", "Pandas",'Flask'],
+    
+    github: "https://github.com/barathkumar229/AI-Google-Stock-Predictor",
+    demo: "https://ai-google-stock-predictor-ve4e.onrender.com/",
   },
   {
-    title: "Speech-to-Text Real-Time Transcription",
-    description: "Real-time speech recognition system with high accuracy, supporting multiple languages and accents for live transcription services.",
-    tech: ["Python", "SpeechRecognition", "PyAudio", "NLP"],
-    image: "🎤",
+    title: "Bengaluru Traffic Analysis",
+    description: "Analyzed real-time traffic data in Bengaluru to identify congestion patterns and peak hours. Developed visualizations to assist in urban traffic management and planning.",
+    tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+   
+    github: "https://github.com/barathkumar229/Bengaluru-Traffic-Analysis",
+    
   },
-  {
-    title: "Agro Drone System",
-    description: "Intelligent agricultural drone with object detection capabilities and weather sensing for precision farming and crop monitoring.",
-    tech: ["Python", "TensorFlow", "Computer Vision", "IoT"],
-    image: "🚁",
-  },
-  {
-    title: "Optimal Ship Routing using AI",
-    description: "AI-powered navigation algorithm optimizing ship routes based on weather conditions, fuel efficiency, and real-time maritime data.",
-    tech: ["Python", "ML Algorithms", "Optimization", "APIs"],
-    image: "⛴️",
-  },
-  {
-    title: "YouTube Comment Sentiment Analysis",
-    description: "Interactive dashboard analyzing YouTube comments using ML to visualize sentiment trends and user engagement patterns.",
-    tech: ["Python", "Flask", "ML", "Chart.js", "YouTube API"],
-    image: "💬",
-  },
+ 
+ 
 ];
 
 export const Projects = () => {
@@ -89,14 +79,32 @@ export const Projects = () => {
                     </div>
                   </CardContent>
                   <CardFooter className="flex gap-2">
-                    <Button variant="outline" size="sm" className="flex-1">
-                      <Github className="mr-2 h-4 w-4" />
-                      GitHub
-                    </Button>
-                    <Button size="sm" className="flex-1 bg-gradient-to-r from-primary to-accent">
-                      <ExternalLink className="mr-2 h-4 w-4" />
-                      Live Demo
-                    </Button>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button variant="outline" size="sm" className="w-full">
+                          <Github className="mr-2 h-4 w-4" />
+                          GitHub
+                        </Button>
+                      </a>
+                    )}
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1"
+                      >
+                        <Button size="sm" className="w-full bg-gradient-to-r from-primary to-accent">
+                          <ExternalLink className="mr-2 h-4 w-4" />
+                          Live Demo
+                        </Button>
+                      </a>
+                    )}
                   </CardFooter>
                 </Card>
               </motion.div>

@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const certifications = [
   {
-    title: "TensorFlow Developer Certificate",
+    title: " Data Scientist Professional Certificate",
     issuer: "Google",
     year: "2024",
   },
@@ -14,9 +14,9 @@ const certifications = [
     year: "2024",
   },
   {
-    title: "Deep Learning Specialization",
-    issuer: "DeepLearning.AI",
-    year: "2023",
+    title: "Data Analyst Professional Certificate",
+    issuer: "Coursera",
+    year: "2025",
   },
 ];
 

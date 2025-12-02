@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, Eye } from "lucide-react";
 import { Button } from "./ui/button";
-import profileImage from "@/assets/profile.jpg";
+import profileImage from "@/assets/WhatsApp Image 2025-12-02 at 10.10.18_e2bcba6dh.jpg";
 
 export const Hero = () => {
   const scrollToProjects = () => {
@@ -11,8 +11,8 @@ export const Hero = () => {
   const handleDownloadResume = () => {
     // Create a placeholder resume download
     const link = document.createElement("a");
-    link.href = "#";
-    link.download = "Barathkumar_Resume.pdf";
+    link.href = "/Barathkumar_data_scientist.pdf";
+    link.download = "Barathkumar_data_scientist.pdf";
     link.click();
   };
 
