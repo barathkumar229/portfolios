@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, Eye } from "lucide-react";
 import { Button } from "./ui/button";
+import profileImage from "@/assets/profile.jpg";
 
 export const Hero = () => {
   const scrollToProjects = () => {
@@ -34,9 +35,11 @@ export const Hero = () => {
           className="mb-8 inline-block"
         >
           <div className="w-40 h-40 rounded-full bg-gradient-to-br from-primary to-accent p-1 animate-float">
-            <div className="w-full h-full rounded-full bg-muted flex items-center justify-center">
-              <span className="text-6xl">👨‍💻</span>
-            </div>
+            <img 
+              src={profileImage} 
+              alt="Barathkumar" 
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
         </motion.div>
 
