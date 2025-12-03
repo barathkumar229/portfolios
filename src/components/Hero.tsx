@@ -9,9 +9,9 @@ export const Hero = () => {
   };
 
   const handleDownloadResume = () => {
-    // Create a placeholder resume download
+    // Dynamically prepend base URL so it works on GitHub Pages
     const link = document.createElement("a");
-    link.href = "/Barathkumar_data_scientist.pdf";
+    link.href = import.meta.env.BASE_URL + "Barathkumar_data_scientist.pdf";
     link.download = "Barathkumar_data_scientist.pdf";
     link.click();
   };
