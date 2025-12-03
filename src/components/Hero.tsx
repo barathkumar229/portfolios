@@ -9,16 +9,15 @@ export const Hero = () => {
   };
 
   const handleDownloadResume = () => {
-    // Dynamically prepend base URL so it works on GitHub Pages
+    // Safe relative path for GitHub Pages + HashRouter
     const link = document.createElement("a");
-    link.href = import.meta.env.BASE_URL + "Barathkumar_data_scientist.pdf";
+    link.href = "./Barathkumar_data_scientist.pdf"; // relative path
     link.download = "Barathkumar_data_scientist.pdf";
     link.click();
   };
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
-      {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/20 to-background -z-10" />
       
       <motion.div
@@ -27,7 +26,6 @@ export const Hero = () => {
         transition={{ duration: 0.8 }}
         className="text-center max-w-4xl mx-auto"
       >
-        {/* Profile Image */}
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -43,7 +41,6 @@ export const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Name */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -53,7 +50,6 @@ export const Hero = () => {
           Barathkumar
         </motion.h1>
 
-        {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -63,7 +59,6 @@ export const Hero = () => {
           AI Engineer | Data Scientist | Machine Learning Developer
         </motion.h2>
 
-        {/* Tagline */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -73,7 +68,6 @@ export const Hero = () => {
           "Turning data into intelligent solutions using AI, ML, and Generative AI."
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -102,3 +96,4 @@ export const Hero = () => {
     </section>
   );
 };
+
