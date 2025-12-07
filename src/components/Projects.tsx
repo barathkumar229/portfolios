@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "Sentiment Analysis on YouTube Comments using ML & LLM/AI",
+    title: "NLP-Based Sentiment Classification Engine for User-Generated Content",
     description: "Developed an interactive dashboard to analyze YouTube comments, classifying them into positive, negative, and neutral sentiments. Leveraged ML models and LLMs to provide insights on audience engagement and trends.",
     tech: ["Python", "ML", "LLM", "Flask","Scikit-learn",'YouTube API',"Logistic Regression"],
    
@@ -13,7 +13,7 @@ const projects = [
     demo: "https://sentiment-analysis-on-youtube-comments-fcvs.onrender.com",
   },
   {
-    title: "AI Google Stock Predictor Using ML",
+    title: "AI-Powered Time-Series Analysis & Stock Forecasting",
     description: "Built a predictive model to forecast Google stock prices using historical data and financial news sentiment analysis. Improved accuracy by combining regression models with LSTM and NLP techniques.",
     tech: ["Python", "Scikit-learn", "Gradient boost ", "Pandas",'Flask'],
     
