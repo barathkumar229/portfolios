@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Github, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
@@ -5,7 +6,7 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "NLP-Based Sentiment Classification Engine for User-Generated Content",
+    title: "Sentiment Analysis on YouTube Comments using ML & LLM/AI",
     description: "Developed an interactive dashboard to analyze YouTube comments, classifying them into positive, negative, and neutral sentiments. Leveraged ML models and LLMs to provide insights on audience engagement and trends.",
     tech: ["Python", "ML", "LLM", "Flask","Scikit-learn",'YouTube API',"Logistic Regression"],
    
@@ -13,7 +14,7 @@ const projects = [
     demo: "https://sentiment-analysis-on-youtube-comments-fcvs.onrender.com",
   },
   {
-    title: "AI-Powered Time-Series Analysis & Stock Forecasting",
+    title: "AI Google Stock Predictor Using ML",
     description: "Built a predictive model to forecast Google stock prices using historical data and financial news sentiment analysis. Improved accuracy by combining regression models with LSTM and NLP techniques.",
     tech: ["Python", "Scikit-learn", "Gradient boost ", "Pandas",'Flask'],
     
@@ -115,3 +116,4 @@ export const Projects = () => {
     </section>
   );
 };
+
